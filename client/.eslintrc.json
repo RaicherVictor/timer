@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-await-in-loop": "off",
+        "no-plusplus": "off",
+        "no-console": "off",
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "no-tabs": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": false,
+                "optionalDependencies": false,
+                "peerDependencies": false
+            }
+        ],
+        "no-loop-func": "off",
+        "react/react-in-jsx-scope":"off",
+        "no-unused-vars":"off",
+        "no-undef":"off"
+    }
+}
